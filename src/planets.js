@@ -8,7 +8,10 @@ export default class Human {
     earthYearsFrom(pastAge) {
       this.yearsFrom = this.baseEarthAge - pastAge;
     }
+
     earthYearsTil(futureAge) {
       this.yearsTil = futureAge - this.baseEarthAge;
     }
+
+    mercuryMath()
 };
