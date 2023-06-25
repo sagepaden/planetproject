@@ -3,6 +3,7 @@ export default class Human {
       this.baseEarthAge = baseEarthAge;
       this.yearsFrom = 0;
       this.yearsTil = 0;
+      this.mercuryYears = Number(baseEarthAge / .24).toFixed(2);
     }
 
     earthYearsFrom(pastAge) {
@@ -12,6 +13,4 @@ export default class Human {
     earthYearsTil(futureAge) {
       this.yearsTil = futureAge - this.baseEarthAge;
     }
-
-    mercuryMath()
 };
