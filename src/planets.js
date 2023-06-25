@@ -15,6 +15,6 @@ export default class Human {
     }
 
     mercury() {
-      this.mercuryYears = this.baseEarthAge / 0.24;
+      this.mercuryYears = Number((this.baseEarthAge / 0.24).toFixed(2));
     }
 };
