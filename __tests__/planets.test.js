@@ -12,7 +12,7 @@ import Human from '../src/planets.js';
     });
 
     test('should return a method that tells you how many years from an age you are at your current age', () => {
-        human.earthYearsFrom(46)
+        human.earthYearsFrom(43)
         expect(human.yearsFrom).toEqual(13);
     });
 })
