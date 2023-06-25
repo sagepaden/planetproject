@@ -1,4 +1,4 @@
-import Human from '../src/js/earthling.js';
+import Human from '../src/planets.js';
 
     describe('Human', () => {
     let human; 
