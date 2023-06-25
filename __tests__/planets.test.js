@@ -21,8 +21,9 @@ import Human from '../src/planets.js';
         expect(human.yearsTil).toEqual(5);
     });
 
-    test('should return a value that calculates Earth years into Mercury years', () => {
-        expec(human.mercuryYears).toEqual(233.33);
+    test('should return a method that calculates Earth years into Mercury years', () => {
+        human.mercury();
+        expect(human.mercuryYears).toEqual(233.33);
     });
 
 
