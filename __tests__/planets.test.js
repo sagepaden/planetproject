@@ -7,7 +7,7 @@ import Human from '../src/planets.js';
         human = new Human (56);
     });
 
-    test('should create a "Human" object with the age of 33', () => {
+    test('should create a "Human" object with the age of 56', () => {
         expect(human.baseEarthAge).toEqual(56);
-    })
+    });
 })
