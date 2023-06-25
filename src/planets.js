@@ -1,20 +1,20 @@
 export default class Human {
     constructor(baseEarthAge) {
       this.baseEarthAge = baseEarthAge;
-      this.yearsFrom = 0;
-      this.yearsTil = 0;
-      this.mercuryYears = 0;
+      this.earthYearsFrom = 0;
+      this.earthYearsTil = 0;
+      this.baseMercuryYears = 0;
     }
 
-    earthYearsFrom(pastAge) {
-      this.yearsFrom = this.baseEarthAge - pastAge;
+    mathEarthYearsFrom(pastAge) {
+      this.earthYearsFrom = this.baseEarthAge - pastAge;
     }
 
-    earthYearsTil(futureAge) {
-      this.yearsTil = futureAge - this.baseEarthAge;
+    mathEarthYearsTil(futureAge) {
+      this.earthYearsTil = futureAge - this.baseEarthAge;
     }
 
     mercury() {
-      this.mercuryYears = Number((this.baseEarthAge / 0.24).toFixed(2));
+      this.baseMercuryYears = Number((this.baseEarthAge / 0.24).toFixed(2));
     }
 };
