@@ -54,7 +54,7 @@ import Human from '../src/planets.js';
         expect(human.venusYearsFrom).toEqual(20.96);
     });
 
-    test('should return a method that tells you how man Venus Years from a future age you are, at your current age', () => {
+    test('should return a method that tells you how many Venus Years from a future age you are, at your current age', () => {
         human.mathVenusYearsTil(61);
         expect(human.venusYearsTil).toEqual(8.06);
     })
@@ -66,4 +66,8 @@ import Human from '../src/planets.js';
         expect(human.baseMarsYears).toEqual(29.78);
     });
 
+    test('should return a method that tells you how many Mars years from a past age you are at your current age', () => {
+        human.mathMarsYearsFrom(43);
+        expect(human.marsYearsFrom).toEqual(6.91);
+    });
 })
