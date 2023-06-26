@@ -27,17 +27,17 @@ export default class Human {
     }
 
     mercury() {
-      let mercYLong = Number(this.baseEarthAge / 0.24);
+      let mercYLong = Number(this.baseEarthAge / .24);
       this.baseMercuryYears = this.fixMyNum(mercYLong);
     }
 
     mathMercuryYearsFrom(pastAge) {
-      let mercYFLong = Number((this.baseEarthAge - pastAge) / 0.24);
+      let mercYFLong = Number((this.baseEarthAge - pastAge) / .24);
       this.mercuryYearsFrom = this.fixMyNum(mercYFLong);
     }
 
     mathMercuryYearsTil(futureAge) {
-      let mercYTLong = Number((futureAge - this.baseEarthAge) / 0.24);
+      let mercYTLong = Number((futureAge - this.baseEarthAge) / .24);
       this.mercuryYearsTil = this.fixMyNum(mercYTLong);
     }
 
@@ -49,6 +49,11 @@ export default class Human {
     mathVenusYearsFrom(pastAge) {
       let venYFLong = Number((this.baseEarthAge - pastAge) / .62);
       this.venusYearsFrom = this.fixMyNum(venYFLong);
+    }
+
+    mathVenusYearsTil(futureAge) {
+      let venYTLong = Number((futureAge - this.baseEarthAge) / .62);
+      this.venusYearsTil = this.fixMyNum(venYTLong);
     }
 
 };

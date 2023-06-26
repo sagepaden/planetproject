@@ -56,7 +56,7 @@ import Human from '../src/planets.js';
 
     test('should return a method that tells you how man Venus Years from a future age you are, at your current age', () => {
         human.mathVenusYearsTil(61);
-        expect(human.venusYearsTill).toEqual(8.06);
+        expect(human.venusYearsTil).toEqual(8.06);
     })
 
 })
