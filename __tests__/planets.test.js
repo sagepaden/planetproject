@@ -59,4 +59,11 @@ import Human from '../src/planets.js';
         expect(human.venusYearsTil).toEqual(8.06);
     })
 
+
+
+    test('should return a method that calculates Earth years into Mars years', () => {
+        human.mars();
+        expect(human.baseMarsYears).toEqual(29.78);
+    });
+
 })
