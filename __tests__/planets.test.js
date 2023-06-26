@@ -25,6 +25,8 @@ import Human from '../src/planets.js';
         expect(human.earthYearsTil).toEqual(5);
     });
 
+
+
     test('should return a method that calculates Earth years into Mercury years', () => {
         human.mercury();
         expect(human.baseMercuryYears).toEqual(233.33);
@@ -40,8 +42,16 @@ import Human from '../src/planets.js';
         expect(human.mercuryYearsTil).toEqual(20.83);
     });
 
+
+
     test('should return a method that calculates Earth years into Venus years', () => {
         human.venus();
         expect(human.baseVenusYears).toEqual(90.32);
     });
+
+    test('should return a method that tells you how many Mercury years from a past age you are at your current age', () => {
+        human.mathVenusYearsFrom(43);
+        expect(human.venusYearsFrom).toEqual(20.96)
+    });
+
 })
