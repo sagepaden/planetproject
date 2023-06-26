@@ -5,6 +5,11 @@ export default class Human {
       this.earthYearsTil = 0;
       this.baseMercuryYears = 0;
       this.mercuryYearsFrom = 0;
+      this.dummy = 0;
+    }
+
+    fixMyNum(number) {
+      this.dummy = Math.trunc(number*100)/100;
     }
 
     mathEarthYearsFrom(pastAge) {
