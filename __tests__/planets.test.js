@@ -82,4 +82,9 @@ import Human from '../src/planets.js';
         human.jupiter();
         expect(human.baseJupiterYears).toEqual(4.72);
     });
+
+    test('should return a method that tells you how many Jupiter years from a past age you are at your current age', () => {
+        human.mathJupiterYearsFrom(43);
+        expect(human.jupiterYearsFrom).toEqual(1.09);
+    });
 })
