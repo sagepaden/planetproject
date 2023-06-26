@@ -35,5 +35,9 @@ import Human from '../src/planets.js';
         expect(human.mercuryYearsFrom).toEqual(54.16)
     });
 
+    test('should return a method that tells you how many Mercury years from a future age you are at your current age', () => {
+        human.mathMercuryYearsTil(61)
+        expect(human.mercuryYearsTil).toEqual(20.83);
+    });
 
 })
