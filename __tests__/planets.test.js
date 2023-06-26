@@ -9,7 +9,7 @@ import Human from '../src/planets.js';
 
     test('should return a number with 2 decimal digits without rounding', () => {
         human.fixMyNum(2.3789);
-        expect(human.dummy).toEqual(2.37);
+        expect(human.roundlessNum).toEqual(2.37);
     })
 
     test('should create a "Human" object with the age of 56', () => {
