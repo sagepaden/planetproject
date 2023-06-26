@@ -68,4 +68,8 @@ export default class Human {
       this.baseMarsYears = this.fixMyNum(marsYLong);
     }
 
+    mathMarsYearsFrom(pastAge) {
+      let marsYFLong = Number((this.baseEarthAge - pastAge) / 1.88);
+      this.marsYearsFrom = this.fixMyNum(marsYFLong);
+    }
 };
