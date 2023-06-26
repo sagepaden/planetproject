@@ -30,10 +30,10 @@ import Human from '../src/planets.js';
         expect(human.baseMercuryYears).toEqual(233.33);
     });
 
-    // test('should return a method that tells you how many Mercury years from a past age you are at your current age', () => {
-    //     human.mathMercuryYearsFrom(43);
-    //     expect(human.mercuryYearsFrom).toEqual(54.16)
-    // });
+    test('should return a method that tells you how many Mercury years from a past age you are at your current age', () => {
+        human.mathMercuryYearsFrom(43);
+        expect(human.mercuryYearsFrom).toEqual(54.16)
+    });
 
 
 })

@@ -22,12 +22,13 @@ export default class Human {
     }
 
     mercury() {
-      let mercYearsLong = Number(this.baseEarthAge / 0.24);
-      this.baseMercuryYears = this.fixMyNum(mercYearsLong);
+      let mercYLong = Number(this.baseEarthAge / 0.24);
+      this.baseMercuryYears = this.fixMyNum(mercYLong);
     }
 
     mathMercuryYearsFrom(pastAge) {
-      this.mercuryYearsFrom = Number(((this.baseEarthAge - pastAge) / 0.24).toFixed(2));
+      let mercYFLong = Number((this.baseEarthAge - pastAge) / 0.24);
+      this.mercuryYearsFrom = this.fixMyNum(mercYFLong);
     }
 
 };
