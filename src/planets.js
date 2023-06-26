@@ -12,6 +12,10 @@ export default class Human {
       this.venusYearsFrom = 0;
       this.venusYearsTil = 0;
 
+      this.baseMarsYears = 0;
+      this.marsYearsFrom = 0;
+      this.marsYearsTil = 0;
+
     }
 
     fixMyNum(number) {
@@ -25,6 +29,7 @@ export default class Human {
     mathEarthYearsTil(futureAge) {
       this.earthYearsTil = futureAge - this.baseEarthAge;
     }
+
 
     mercury() {
       let mercYLong = Number(this.baseEarthAge / .24);
@@ -41,6 +46,7 @@ export default class Human {
       this.mercuryYearsTil = this.fixMyNum(mercYTLong);
     }
 
+
     venus() {
       let venusYLong = Number(this.baseEarthAge / .62);
       this.baseVenusYears = this.fixMyNum(venusYLong);
@@ -54,6 +60,12 @@ export default class Human {
     mathVenusYearsTil(futureAge) {
       let venYTLong = Number((futureAge - this.baseEarthAge) / .62);
       this.venusYearsTil = this.fixMyNum(venYTLong);
+    }
+
+
+    mars() {
+      let marsYLong = Number(this.baseEarthAge / 1.88);
+      this.baseMarsYears = this.fixMyNum(marsYLong);
     }
 
 };
