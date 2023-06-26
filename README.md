@@ -1,4 +1,4 @@
-# _Planets_
+# _Planet Project_
 
 #### _This application converts your age from Earth years to Mercury, Venus, Mars, and Jupiter years_
 
@@ -20,7 +20,7 @@ _This application demonstrates Red-Green-Refactor workflow for testing via Jest 
 
 ## Setup/Installation Requirements
 
-* _Clone “planets“ from the repository to your desktop_
+* _Clone “Planet Project“ from the repository to your desktop_
 * _Navigate to “planets“ directory via your local terminal command line_
 * _Open the directory in VS code by typing 'code .' in the command line_
 * _Run 'npm install' in the command line to install all packages_
