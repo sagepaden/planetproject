@@ -8,7 +8,7 @@ import Human from '../src/planets.js';
     });
 
     test('should return a number with 2 decimal digits without rounding', () => {
-        expect(human.fixMyNum(2.3789)).toEqual(2.37)
+        expect(human.fixMyNum(2.3789)).toEqual(2.37);
     })
 
     test('should create a "Human" object with the age of 56', () => {
@@ -16,12 +16,12 @@ import Human from '../src/planets.js';
     });
 
     test('should return a method that tells you how many years from a past age you are at your current age', () => {
-        human.mathEarthYearsFrom(43)
+        human.mathEarthYearsFrom(43);
         expect(human.earthYearsFrom).toEqual(13);
     });
 
     test('should return a method that tells you how many years from a future age you are at your current age', () => {
-        human.mathEarthYearsTil(61)
+        human.mathEarthYearsTil(61);
         expect(human.earthYearsTil).toEqual(5);
     });
 
@@ -34,11 +34,11 @@ import Human from '../src/planets.js';
 
     test('should return a method that tells you how many Mercury years from a past age you are at your current age', () => {
         human.mathMercuryYearsFrom(43);
-        expect(human.mercuryYearsFrom).toEqual(54.16)
+        expect(human.mercuryYearsFrom).toEqual(54.16);
     });
 
     test('should return a method that tells you how many Mercury years from a future age you are at your current age', () => {
-        human.mathMercuryYearsTil(61)
+        human.mathMercuryYearsTil(61);
         expect(human.mercuryYearsTil).toEqual(20.83);
     });
 
@@ -51,7 +51,12 @@ import Human from '../src/planets.js';
 
     test('should return a method that tells you how many Mercury years from a past age you are at your current age', () => {
         human.mathVenusYearsFrom(43);
-        expect(human.venusYearsFrom).toEqual(20.96)
+        expect(human.venusYearsFrom).toEqual(20.96);
     });
+
+    test('should return a method that tells you how man Venus Years from a future age you are, at your current age', () => {
+        human.mathVenusYearsTil(61);
+        expect(human.venusYearsTill).toEqual(8.06);
+    })
 
 })
