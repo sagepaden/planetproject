@@ -46,4 +46,9 @@ export default class Human {
       this.baseVenusYears = this.fixMyNum(venusYLong);
     }
 
+    mathVenusYearsFrom(pastAge) {
+      let venYFLong = Number((this.baseEarthAge - pastAge) / .62);
+      this.venusYearsFrom = this.fixMyNum(venYFLong);
+    }
+
 };
