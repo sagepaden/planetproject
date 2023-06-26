@@ -4,6 +4,7 @@ export default class Human {
       this.earthYearsFrom = 0;
       this.earthYearsTil = 0;
       this.baseMercuryYears = 0;
+      this.mercuryYearsFrom = 0;
     }
 
     mathEarthYearsFrom(pastAge) {
@@ -17,4 +18,9 @@ export default class Human {
     mercury() {
       this.baseMercuryYears = Number((this.baseEarthAge / 0.24).toFixed(2));
     }
+
+    mathMercuryYearsFrom(pastAge) {
+      this.mercuryYearsFrom = Number(((this.baseEarthAge - pastAge) / 0.24).toFixed(2));
+    }
+
 };
