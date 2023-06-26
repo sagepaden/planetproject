@@ -16,6 +16,9 @@ export default class Human {
       this.marsYearsFrom = 0;
       this.marsYearsTil = 0;
 
+      this.baseJupiterYears = 0;
+      this.jupiterYearsFrom = 0;
+      this.jupiterYearsTil = 0;
     }
 
     fixMyNum(number) {
@@ -76,5 +79,11 @@ export default class Human {
     mathMarsYearsTil(futureAge) {
       let marsYTLong = Number((futureAge - this.baseEarthAge) / 1.88);
       this.marsYearsTil = this.fixMyNum(marsYTLong);
+    }
+
+
+    jupiter() {
+      let jupYLong = Number(this.baseEarthAge / 11.86);
+      this.baseJupiterYears = this.fixMyNum(jupYLong);
     }
 };

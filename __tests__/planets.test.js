@@ -80,6 +80,6 @@ import Human from '../src/planets.js';
 
     test('should return a method that calculates Earth years into Jupiter years', () => {
         human.jupiter();
-        expect(human.baseJupiterYears).toEqual(4.84);
+        expect(human.baseJupiterYears).toEqual(4.72);
     });
 })
