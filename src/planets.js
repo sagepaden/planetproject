@@ -86,4 +86,9 @@ export default class Human {
       let jupYLong = Number(this.baseEarthAge / 11.86);
       this.baseJupiterYears = this.fixMyNum(jupYLong);
     }
+
+    mathJupiterYearsFrom(pastAge) {
+      let jupYFLong = Number((this.baseEarthAge - pastAge) / 11.86);
+      this.jupiterYearsFrom = this.fixMyNum(jupYFLong);
+    }
 };
