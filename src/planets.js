@@ -1,15 +1,16 @@
 export default class Human {
     constructor(baseEarthAge) {
+      this.roundlessNum = 0;
       this.baseEarthAge = baseEarthAge;
       this.earthYearsFrom = 0;
       this.earthYearsTil = 0;
       this.baseMercuryYears = 0;
       this.mercuryYearsFrom = 0;
-      this.roundlessNum = 0;
+
     }
 
     fixMyNum(number) {
-      this.roundlessNum = Math.trunc(number*100)/100;
+      return Math.trunc(number*100)/100;
     }
 
     mathEarthYearsFrom(pastAge) {
@@ -21,7 +22,7 @@ export default class Human {
     }
 
     mercury() {
-      let mercYearsLong = (this.baseEarthAge / 0.24);
+      let mercYearsLong = Number(this.baseEarthAge / 0.24);
       this.baseMercuryYears = this.fixMyNum(mercYearsLong);
     }
 
