@@ -72,7 +72,7 @@ import Human from '../src/planets.js';
     });
 
     test('should return a method that tells you how many Mars Years from a future age you are, at your current age', () => {
-        human.mathVenusYearsTil(61);
+        human.mathMarsYearsTil(61);
         expect(human.marsYearsTil).toEqual(2.65);
     })
 })
