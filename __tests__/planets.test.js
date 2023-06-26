@@ -40,4 +40,8 @@ import Human from '../src/planets.js';
         expect(human.mercuryYearsTil).toEqual(20.83);
     });
 
+    test('should return a method that calculates Earth years into Venus years', () => {
+        human.venus();
+        expect(human.baseVenusYears).toEqual(90.32);
+    });
 })

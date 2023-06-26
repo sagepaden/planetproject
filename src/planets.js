@@ -3,9 +3,14 @@ export default class Human {
       this.baseEarthAge = baseEarthAge;
       this.earthYearsFrom = 0;
       this.earthYearsTil = 0;
+      
       this.baseMercuryYears = 0;
       this.mercuryYearsFrom = 0;
       this.mercuryYearsTil = 0;
+
+      this.baseVenusYears = 0;
+      this.venusYearsFrom = 0;
+      this.venusYearsTil = 0;
 
     }
 
