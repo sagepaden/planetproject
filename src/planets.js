@@ -3,7 +3,7 @@ export default class Human {
       this.baseEarthAge = baseEarthAge;
       this.earthYearsFrom = 0;
       this.earthYearsTil = 0;
-      
+
       this.baseMercuryYears = 0;
       this.mercuryYearsFrom = 0;
       this.mercuryYearsTil = 0;
@@ -39,6 +39,11 @@ export default class Human {
     mathMercuryYearsTil(futureAge) {
       let mercYTLong = Number((futureAge - this.baseEarthAge) / 0.24);
       this.mercuryYearsTil = this.fixMyNum(mercYTLong);
+    }
+
+    venus() {
+      let venusYLong = Number(this.baseEarthAge / .62);
+      this.baseVenusYears = this.fixMyNum(venusYLong);
     }
 
 };
